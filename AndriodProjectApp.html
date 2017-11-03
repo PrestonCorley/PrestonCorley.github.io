@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" 
+      type="image/ico" 
+      href="images/favicon.ico">
+	<head>
+	    <style>
+	        body
+	        	   {Background-image: url("/images/Space.jpg");" background-repeat: no-repeat;}
+	        	   
+			      a  {font-family: sans-serif; font-variant:small-caps; font-weight:bold color:white;}
+	    </style>
+		<meta charset="utf-8">
+		<title>Andriod Project 1</title>
+	</head>
+	<body>
+		<div class="w3-bar w3-white w3-container">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+		</div>
+		<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right w3-black" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="AndriodProjectApp.html" class="w3-bar-item w3-button">Andriod App Project</a>
+  <a href="#" class="w3-bar-item w3-button">Coming Soon</a>
+  <a href="#" class="w3-bar-item w3-button">Coming Soon</a>
+</div>
+
+		<!-- Page Content -->
+<div>
+  <button class="w3-button w3-xlarge w3-white" onclick="w3_open()">☰</button> 
+  <div class="w3-container">
+    <style>
+    body
+       	h1 { color: white;}
+    </style>
+    <h1>Andriod Project App</h1>
+  </div>
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+	    <!-- Project -->
+<div class="w3-card-4" style="width:24%">
+<header class="w3-container w3-gray">
+  <h2>Space Adventure / Preston Corley</h2>
+</header>
+
+<div class="w3-container">
+<video width="260" height="400" controls>
+  <source src="Projectfiles/SpaceAdventureVideo.webm" type="video/webm">
+</video>
+</div>
+
+<footer class="w3-container w3-gray">
+  <h5> 
+  <a href="Projectfiles/Written Response - Preston Corley.pdf">Written Response pdf</a>
+  <a href="Projectfiles/Spacegame.aia">aia Download</a> 
+  <a href="Projectfiles/Spacegame.apk">apk Download </a> 
+  </h5>
+</footer>
+
+</div>
+	</body>
+</html>

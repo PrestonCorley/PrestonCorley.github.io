@@ -1,11 +1,14 @@
 <!doctype html>
 <html lang="en">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" 
+      type="image/ico" 
+      href="images/favicon.ico">
 	<head>
 	    <style>
 	        body
-	        	{Background-image: url("/images/red.jpg"); background-repeat: no-repeat;}
-	        h1 {background-color:#DC143C;} {font-family: Georgia; color: white;} {font-weight: bolder;} 
+	        	{Background-image: url("/images/red.jpg");" background-repeat: no-repeat;}
+	        h1 {color: black;} {font-weight: bolder;} 
 			a  {font-family: sans-serif; font-variant:small-caps; font-weight:bold} {color:white;}
 	    </style>
 		<meta charset="utf-8">
@@ -15,9 +18,32 @@
 		<div class="w3-bar w3-#DC143C w3-container">
   <a href="index.html" class="w3-bar-item w3-button">Home</a>
   <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="Template.html" class="w3-bar-item w3-button">Template</a>
+  <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
 		</div>
-		<h1>Preston Corley</h1>
-		<img src="" height="250">
+		<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right w3-black" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="AndriodProjectApp.html" class="w3-bar-item w3-button">Andriod App Project</a>
+  <a href="#" class="w3-bar-item w3-button">Coming Soon</a>
+  <a href="#" class="w3-bar-item w3-button">Coming Soon</a>
+</div>
+
+		<!-- Page Content -->
+<div>
+  <button class="w3-button w3-xlarge" onclick="w3_open()">☰</button> 
+  <div class="w3-container">
+    <h1>Preston Corley</h1>
+  </div>
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+	
 	</body>
 </html>
